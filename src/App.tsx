@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-    <h1>Typescript+react</h1>
+    <h1>Changed </h1>
     </>
   )
 }
