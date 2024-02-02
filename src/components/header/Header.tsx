@@ -1,5 +1,5 @@
 // import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 import "./Header.css"
 
 function Header() {
@@ -8,7 +8,7 @@ function Header() {
           <nav>
             <h1>THE PLANETS</h1>
             <ul>
-              <li>MERCURY</li>
+              <Link to="mercury"><li>MERCURY</li></Link>
               <li>VENUS</li>
               <li>EARTH</li>
               <li>MARS</li>
