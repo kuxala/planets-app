@@ -31,3 +31,22 @@ nav ul li{
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+.menu{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 968px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        display: none;
+    }
+    .menu{
+        visibility: visible;
+    }
+    
+
+}
