@@ -15,21 +15,21 @@ function MainPage() {
               setMainImage("../../public/assets/planet-mercury.svg");
             }}
           >
-            01 OVERVIEW
+            OVERVIEW
           </a>
           <a
             onClick={() => {
               setMainImage("../../public/assets/planet-mercury-internal.svg");
             }}
           >
-            02 INTERNAL STRUCTURE
+            INTERNAL STRUCTURE
           </a>
           <a
             onClick={() => {
               setMainImage("../../public/assets/geology-mercury.png");
             }}
           >
-            03 SURFACE GEOLOGY
+            SURFACE GEOLOGY
           </a>
         </div>
         <div className="left-col">

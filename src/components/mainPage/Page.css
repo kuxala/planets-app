@@ -147,12 +147,16 @@ section div h1 {
         padding-top: 0 !important;
         /* align-items: center; */
     }
+    .image{
+        margin-top: 70px;
+        margin-bottom: 80px;
+    }
     .left-col{
         width: 100% !important;
     }
     .left-col .image{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
     .right-col{
         width: 100% !important;
@@ -228,6 +232,7 @@ section div h1 {
         gap: 44px;
         justify-content: center;
         padding: 20px;
+        border: 1px solid rgba(246, 246, 246, 0.3);
     }
     .mobile-buttons a{
         color: #FFF;
@@ -239,6 +244,7 @@ section div h1 {
         line-height: normal;
         letter-spacing: 1.929px;
         text-transform: uppercase;
+        
     }
 
 }

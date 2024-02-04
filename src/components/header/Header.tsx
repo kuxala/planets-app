@@ -14,7 +14,9 @@ function Header() {
           width="30px"
           height="30px"
           className="menu"
-          onClick={() => {}}
+          onClick={() => {
+            
+          }}
         />
         <ul>
           <Link to="mercury">
