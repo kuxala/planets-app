@@ -88,7 +88,7 @@ function MainPage() {
           <p>RADIUS</p>
           <h1>2,439.7 KM</h1>
         </div>
-        <div>
+        <div  id="padding-bot">
           <p>AVERAGE TEMO</p>
           <h1>430°c</h1>
         </div>

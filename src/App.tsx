@@ -3,8 +3,8 @@ import './index.css';
 import { Link, Route, Routes } from 'react-router-dom';
 import Header from "./components/header/Header";
 import Mercury from "./components/mainPage/Page";
-import Venus from "./components/pages/venus/Venus";
-import Earth from "./components/pages/earth/Earth";
+import Venus from "./components/pages/Venus";
+import Earth from "./components/pages/Earth";
 
 
 

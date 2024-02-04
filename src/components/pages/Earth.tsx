@@ -1,30 +1,54 @@
-import "./Earth.css";
 import { useState } from "react";
-
-function Earth() {
+// import "../mainPage/Page.css"
+function MainPage() {
   const [mainImage, setMainImage] = useState(
     "../../public/assets/planet-earth.svg"
   );
+
   return (
     <>
       <main>
+        <div className="mobile-buttons">
+          <a
+            onClick={() => {
+              setMainImage("../../public/assets/planet-earth.svg");
+            }}
+          >
+            OVERVIEW
+          </a>
+          <a
+            onClick={() => {
+              setMainImage("../../public/assets/planet-earth-internal.svg");
+            }}
+          >
+            INTERNAL STRUCTURE
+          </a>
+          <a
+            onClick={() => {
+              setMainImage("../../public/assets/geology-earth.png");
+            }}
+          >
+            SURFACE GEOLOGY
+          </a>
+        </div>
         <div className="left-col">
-          <img src={mainImage} />
+          <img src={mainImage} className="image" />
         </div>
         <div className="right-col">
           <h1>EARTH</h1>
           <p id="description">
-            Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's 
-            surface is land with remaining 70.8% is covered with water. Earth's 
-            distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.
+          Third planet from the Sun and the only known planet to harbor life.
+           About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties 
+          and geological history have allowed life to evolve and thrive.
           </p>
           <p id="source">
             Source:{"  "}
-            <a href="https://en.wikipedia.org/wiki/Earth_(planet)">Wikipedia</a>
+            <a href="https://en.wikipedia.org/wiki/Earth_(planet)">
+              Wikipedia
+            </a>
           </p>
           <div className="buttons">
             <button
-              id="first-button"
               onClick={() => {
                 setMainImage("../../public/assets/planet-earth.svg");
               }}
@@ -70,4 +94,4 @@ function Earth() {
   );
 }
 
-export default Earth;
+export default MainPage;

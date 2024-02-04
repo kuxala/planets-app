@@ -1,7 +1,7 @@
 // import React from 'react'
 import { Link, Route, Routes } from "react-router-dom";
 import "./Header.css";
-import Venus from "../pages/venus/Venus";
+import Venus from "../pages/Venus";
 import Mercury from "../mainPage/Page";
 
 function Header() {

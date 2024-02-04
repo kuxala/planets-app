@@ -1,31 +1,54 @@
-import "./Venus.css";
 import { useState } from "react";
-
-function Venus() {
+// import "../mainPage/Page.css"
+function MainPage() {
   const [mainImage, setMainImage] = useState(
     "../../public/assets/planet-venus.svg"
   );
+
   return (
     <>
       <main>
+        <div className="mobile-buttons">
+          <a
+            onClick={() => {
+              setMainImage("../../public/assets/planet-venus.svg");
+            }}
+          >
+            OVERVIEW
+          </a>
+          <a
+            onClick={() => {
+              setMainImage("../../public/assets/planet-venus-internal.svg");
+            }}
+          >
+            INTERNAL STRUCTURE
+          </a>
+          <a
+            onClick={() => {
+              setMainImage("../../public/assets/geology-venus.png");
+            }}
+          >
+            SURFACE GEOLOGY
+          </a>
+        </div>
         <div className="left-col">
-          <img src={mainImage} />
+          <img src={mainImage} className="image" />
         </div>
         <div className="right-col">
           <h1>VENUS</h1>
           <p id="description">
-            Venus is the second planet from the Sun. It is named after the Roman
-            goddess of love and beauty. As the brightest natural object in
-            Earth's night sky after the Moon, Venus can cast shadows and can be,
-            on rare occasions, visible to the naked eye in broad daylight.
+          Venus is the second planet from the Sun.
+          It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, 
+          on rare occasions, visible to the naked eye in broad daylight.
           </p>
           <p id="source">
             Source:{"  "}
-            <a href="https://en.wikipedia.org/wiki/Venus_(planet)">Wikipedia</a>
+            <a href="https://en.wikipedia.org/wiki/Venus_(planet)">
+              Wikipedia
+            </a>
           </p>
           <div className="buttons">
             <button
-              id="first-button"
               onClick={() => {
                 setMainImage("../../public/assets/planet-venus.svg");
               }}
@@ -34,14 +57,14 @@ function Venus() {
             </button>
             <button
               onClick={() => {
-                setMainImage("../../public/assets/planet-venus-internal.svg");
+                setMainImage("../../public/assets/planet-mercury-internal.svg");
               }}
             >
               02 INTERNAL STRUCTURE
             </button>
             <button
               onClick={() => {
-                setMainImage("../../public/assets/geology-mercury.png");
+                setMainImage("../../public/assets/geology-venus.png");
               }}
             >
               03 SURFACE GEOLOGY
@@ -71,4 +94,4 @@ function Venus() {
   );
 }
 
-export default Venus;
+export default MainPage;

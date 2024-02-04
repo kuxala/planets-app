@@ -1,9 +1,4 @@
-/* h1{
-    color: #fff;
-} */
-/* *{
-    overflow-x: hidden;
-} */
+
 main {
     display: flex;
     padding-top: 126px;
@@ -112,7 +107,7 @@ section {
 }
 section div{
     width: 255px;
-    height: 128px;
+    height: 100%;
     border: 1px solid rgba(246, 246, 246, 0.3);
     padding: 20px 23px;
 }
@@ -179,10 +174,11 @@ section div h1 {
         color: #FFF;
         text-align: center;
         font-family: Spartan;
-        font-size: 11px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 22px; /* 200% */
+        max-width: 327px;;
     }
     #source{
         display: flex;
@@ -208,14 +204,16 @@ section div h1 {
     }   
     section div{
         width: 90% !important;
+        height: 48px;
         margin: 0 23px; 
         display: flex;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
     }
     section div h1{
         color: #FFF;
-        text-align: right;
+        text-align: center;
         font-family: Antonio;
         font-size: 20px;
         font-style: normal;
@@ -223,6 +221,10 @@ section div h1 {
         line-height: normal;
         letter-spacing: -0.75px;
         text-transform: uppercase;
+    }
+    section div p {
+        padding-top: 10px;
+        text-align: center;
     }
 
     .mobile-buttons{
@@ -247,4 +249,9 @@ section div h1 {
         
     }
 
+    #padding-bot {
+        margin-bottom: 50px;
+    }
+
+    
 }
