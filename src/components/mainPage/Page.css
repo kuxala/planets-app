@@ -91,7 +91,7 @@ button{
     border: 1px solid rgba(246, 246, 246, 0.3);
 }
 .buttons button:hover{
-    background: #D8D8D8;
+    background: #9f9e9e;
 }
 .buttons button:focus{
     background: #419EBB;

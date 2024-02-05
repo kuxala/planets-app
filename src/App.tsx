@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 import './index.css';
 import { Link, Route, Routes } from 'react-router-dom';
+import styled from "styled-components";
 import Header from "./components/header/Header";
 import Mercury from "./components/mainPage/Page";
 import Venus from "./components/pages/Venus";
@@ -12,6 +13,7 @@ import Uranus from "./components/pages/Uranus"
 import Neptune from "./components/pages/Neptune"
 
 function App() {
+  
   return (
     <>
     <Header />

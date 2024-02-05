@@ -39,6 +39,8 @@ nav ul li a{
     visibility: hidden;
 }
 
+
+
 @media only screen and (max-width: 968px) {
     nav {
         display: flex;
@@ -52,5 +54,58 @@ nav ul li a{
         visibility: visible;
     }
     
+    .dropdown{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 10%;
+    }
 
+    .dropdown .round{
+        width: 20px;
+        height: 20px;
+        background-color: #DEF4FC;
+        border-radius: 50%;
+    }
+    .dropdown ul li {
+        padding: 20px 24px;
+        border-bottom: 1px solid rgba(246, 246, 246, 0.2);
+        color: white;
+        display: flex;
+        gap: 25px;
+        color: #FFF;
+        text-align: center;
+        font-family: Spartan;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px; /* 166.667% */
+        letter-spacing: 1.364px;
+        text-transform: uppercase;
+    }
+    #first-child{
+        padding-top: 40px;
+    }
+    .venus{
+        background-color: #F7CC7F !important;
+    }
+    .earth{
+        background-color: #545BFE !important;
+    }
+    .mars{
+        background-color: #FF6A45 !important;
+    }
+    .jupiter{
+        background-color: #ECAD7A !important;
+    }
+    .saturn{
+        background-color: #FCCB6B !important;
+    }
+    .uranus{
+        background-color: #65F0D5 !important;
+    }
+    .neptune{
+        background-color: #497EFA !important;
+    }
+    
 }

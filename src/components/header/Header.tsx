@@ -1,10 +1,17 @@
 // import React from 'react'
 import { Link, Route, Routes } from "react-router-dom";
+import {useState} from "react";
 import "./Header.css";
+import Dropdown from "./Dropdown";
+import MainPage from "../mainPage/Page";
 
 function Header() {
-  return (
+  const [show, setShow] = useState<any>(false);
+ 
+  
+ return (
     <>
+    
       <nav>
         <h1>THE PLANETS</h1>
         <img
@@ -12,8 +19,9 @@ function Header() {
           width="30px"
           height="30px"
           className="menu"
-          onClick={() => {}}
+          onClick={() => {setShow(!show)}}
         />
+        
         <ul>
           <Link to="mercury">
             <li>MERCURY</li>

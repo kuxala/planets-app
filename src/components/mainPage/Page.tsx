@@ -1,12 +1,15 @@
 import "./Page.css";
 import { useState } from "react";
+import Dropdown from "../header/Dropdown";
 
 function MainPage() {
   const [mainImage, setMainImage] = useState(
     "../../public/assets/planet-mercury.svg"
   );
-
-  return (
+  
+  
+  
+  const main  = (
     <>
       <main>
         <div className="mobile-buttons">
@@ -95,6 +98,9 @@ function MainPage() {
       </section>
     </>
   );
+  return main
+  // return <Dropdown />;
 }
 
 export default MainPage;
+
