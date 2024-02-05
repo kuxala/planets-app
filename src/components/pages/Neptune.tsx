@@ -32,9 +32,9 @@ function Neptune() {
           </a>
         </div>
         <div className="left-col">
-          <img src={mainImage} className="image" width="440px" height="440px" />
+          <img src={mainImage} className="image animated-image" width="440px" height="440px" />
         </div>
-        <div className="right-col">
+        <div className="right-col animated-text">
           <h1>NEPTUNE</h1>
           <p id="description">
           Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, 
@@ -72,7 +72,7 @@ function Neptune() {
           </div>
         </div>
       </main>
-      <section>
+      <section className="animated-text-bottom">
         <div>
           <p>ROTATION TIME</p>
           <h1>16.08 hours</h1>

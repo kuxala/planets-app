@@ -32,7 +32,7 @@ function Jupiter() {
           </a>
         </div>
         <div className="left-col">
-          <img src={mainImage} className="image" width="550px" height="550px" />
+          <img src={mainImage} className="image animated-image" width="550px" height="550px" />
         </div>
         <div className="right-col">
           <h1>JUPITER</h1>

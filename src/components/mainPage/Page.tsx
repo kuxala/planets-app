@@ -36,9 +36,9 @@ function MainPage() {
           </a>
         </div>
         <div className="left-col">
-          <img src={mainImage} className="image" width="290px" height="290px"/>
+          <img src={mainImage} className="image animated-image" width="250px" height="250px"/>
         </div>
-        <div className="right-col">
+        <div className="right-col animated-text">
           <h1>MERCURY</h1>
           <p id="description">
             Mercury is the smallest planet in the Solar System and the closest
@@ -78,7 +78,7 @@ function MainPage() {
           </div>
         </div>
       </main>
-      <section>
+      <section className="animated-text-bottom">
         <div>
           <p>ROTATION TIME</p>
           <h1>58.6 DAYS</h1>

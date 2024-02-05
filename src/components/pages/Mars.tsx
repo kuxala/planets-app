@@ -32,9 +32,9 @@ function Mars() {
           </a>
         </div>
         <div className="left-col">
-          <img src={mainImage} className="image" width="336px" height="336px" />
+          <img src={mainImage} className="image animated-image" width="336px" height="336px" />
         </div>
-        <div className="right-col">
+        <div className="right-col animated-text">
           <h1>MARS</h1>
           <p id="description">
             Mercury is the smallest planet in the Solar System and the closest
@@ -74,7 +74,7 @@ function Mars() {
           </div>
         </div>
       </main>
-      <section>
+      <section className="animated-text-bottom">
         <div>
           <p>ROTATION TIME</p>
           <h1>1.03 days	</h1>

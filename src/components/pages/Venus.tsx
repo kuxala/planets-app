@@ -32,9 +32,9 @@ function MainPage() {
           </a>
         </div>
         <div className="left-col">
-          <img src={mainImage} className="image" width="400px" height="400px"/>
+          <img src={mainImage} className="image animated-image" width="400px" height="400px"/>
         </div>
-        <div className="right-col">
+        <div className="right-col animated-text">
           <h1>VENUS</h1>
           <p id="description">
           Venus is the second planet from the Sun.
@@ -57,7 +57,7 @@ function MainPage() {
             </button>
             <button
               onClick={() => {
-                setMainImage("../../public/assets/planet-mercury-internal.svg");
+                setMainImage("../../public/assets/planet-venus-internal.svg");
               }}
             >
               02 INTERNAL STRUCTURE
@@ -72,7 +72,7 @@ function MainPage() {
           </div>
         </div>
       </main>
-      <section>
+      <section className="animated-text-bottom">
         <div>
           <p>ROTATION TIME</p>
           <h1>243 days</h1>

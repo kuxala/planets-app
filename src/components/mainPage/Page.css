@@ -3,6 +3,7 @@ main {
     display: flex;
     padding-top: 126px;
     width: 100%;
+    overflow-x: hidden;
 }
 .left-col{
     width:60%;
@@ -11,9 +12,62 @@ main {
     align-items: center;
 }
 /* .left-col img{
-    width: 390px;
-    height: 390px;
+    width: 200px;
+    height: 200px;
+    transition: width 2s, height 2s, transform 2s;
 } */
+@keyframes growAndRotate {
+    from {
+      width: 250px;
+      height: 250px;
+      transform: rotate(0deg);
+    }
+    to {
+      width: 400px;
+      height: 400px;
+      transform: rotate(360deg);
+    }
+  }
+
+  .animated-image {
+    width: 400px;
+    height: 400px;
+    transition: width 2s ease-in-out, transform 2s ease-in-out; /* You can customize the duration and timing function */
+    animation: growAndRotate 2s ease-in-out; /* You can customize the duration and timing function */
+  }
+
+  @keyframes fadeInFromRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .animated-text {
+    animation: fadeInFromRight 2s ease-in-out; /* You can customize the duration and timing function */
+  }
+
+  @keyframes fadeInFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .container {
+    overflow: hidden;
+    height: 100px; /* Set the height of your container */
+  }
+
+  .animated-text-bottom {
+    animation: fadeInFromBottom 2s ease-in-out; /* You can customize the duration and timing function */
+  }
+
 .right-col{
     width: 40%;
 }
@@ -136,11 +190,36 @@ section div h1 {
 .mobile-buttons{
     display: none;
 }
+
+
 @media only screen and (max-width: 968px){
+
+    @keyframes growAndRotate {
+        from {
+          width: 150px !important;
+          height: 150px !important;
+          transform: rotate(0deg);
+        }
+        to {
+          width: 250px !important;
+          height: 250px !important;
+          transform: rotate(360deg);
+        }
+      }
+    
+      .animated-image {
+        width: 250px !important;
+        height: 250px !important;
+        transition: width 2s ease-in-out, transform 2s ease-in-out; /* You can customize the duration and timing function */
+        animation: growAndRotate 2s ease-in-out; /* You can customize the duration and timing function */
+      }
+
+      
     main{
         flex-direction: column;
         padding-top: 0 !important;
         /* align-items: center; */
+        overflow: hidden;
     }
     .image{
         margin-top: 70px;

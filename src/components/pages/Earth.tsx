@@ -32,9 +32,9 @@ function MainPage() {
           </a>
         </div>
         <div className="left-col">
-          <img src={mainImage} className="image"width="450px" height="450px" />
+          <img src={mainImage} className="image animated-image" width="450px" height="450px" />
         </div>
-        <div className="right-col">
+        <div className="right-col animated-text">
           <h1>EARTH</h1>
           <p id="description">
           Third planet from the Sun and the only known planet to harbor life.
@@ -72,7 +72,7 @@ function MainPage() {
           </div>
         </div>
       </main>
-      <section>
+      <section className="animated-text-bottom">
         <div>
           <p>ROTATION TIME</p>
           <h1>0.99 days</h1>

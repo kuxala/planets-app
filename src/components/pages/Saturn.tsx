@@ -31,10 +31,10 @@ function Saturn() {
             SURFACE GEOLOGY
           </a>
         </div>
-        <div className="left-col">
-          <img src={mainImage} className="image" width="500px" height="500px" />
+        <div className="left-col ">
+          <img src={mainImage} className="image animated-image" width="500px" height="500px" />
         </div>
-        <div className="right-col">
+        <div className="right-col animated-text">
           <h1>Saturn</h1>
           <p id="description">
             Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter.
@@ -72,7 +72,7 @@ function Saturn() {
           </div>
         </div>
       </main>
-      <section>
+      <section className="animated-text-bottom">
         <div>
           <p>ROTATION TIME</p>
           <h1>10.8 hours</h1>

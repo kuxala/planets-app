@@ -17,7 +17,6 @@ function App() {
   return (
     <>
     <Header />
-    {/* <Mercury /> */}
     <Routes>
       <Route path="/" element={<Earth />} />
       <Route path="mercury" element={<Mercury />} />

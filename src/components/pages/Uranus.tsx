@@ -32,9 +32,9 @@ function Uranus() {
           </a>
         </div>
         <div className="left-col">
-          <img src={mainImage} className="image" width="450px" height="450px" />
+          <img src={mainImage} className="image animated-image" width="450px" height="450px" />
         </div>
-        <div className="right-col">
+        <div className="right-col animated-text">
           <h1>URANUS</h1>
           <p id="description">
           Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, 
@@ -72,7 +72,7 @@ function Uranus() {
           </div>
         </div>
       </main>
-      <section>
+      <section className="animated-text-bottom">
         <div>
           <p>ROTATION TIME</p>
           <h1>17.2 hours</h1>
