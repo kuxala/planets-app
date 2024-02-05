@@ -4,6 +4,9 @@ function Mars() {
   const [mainImage, setMainImage] = useState(
     "../../public/assets/planet-mars.svg"
   );
+  const [description, setDescription] = useState(
+    "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the Red Planet."
+   );
 
   return (
     <>
@@ -12,6 +15,7 @@ function Mars() {
           <a
             onClick={() => {
               setMainImage("../../public/assets/planet-mars.svg");
+              setDescription("Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the Red Planet.")
             }}
           >
             OVERVIEW
@@ -19,6 +23,7 @@ function Mars() {
           <a
             onClick={() => {
               setMainImage("../../public/assets/planet-mars-internal.svg");
+              setDescription("Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials. Scientists initially determined that the core is at least partially liquid. Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur.")
             }}
           >
             INTERNAL STRUCTURE
@@ -26,6 +31,7 @@ function Mars() {
           <a
             onClick={() => {
               setMainImage("../../public/assets/mars-geology.png");
+              setDescription("Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.")
             }}
           >
             SURFACE GEOLOGY
@@ -37,11 +43,7 @@ function Mars() {
         <div className="right-col animated-text">
           <h1>MARS</h1>
           <p id="description">
-            Mercury is the smallest planet in the Solar System and the closest
-            to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
-            shortest of all the Sun's planets. Mercury is one of four
-            terrestrial planets in the Solar System, and is a rocky body like
-            Earth.
+            {description}
           </p>
           <p id="source">
             Source:{"  "}
@@ -53,6 +55,7 @@ function Mars() {
             <button
               onClick={() => {
                 setMainImage("../../public/assets/planet-mars.svg");
+                setDescription("Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the Red Planet.")
               }}
             >
               01 OVERVIEW
@@ -60,6 +63,7 @@ function Mars() {
             <button
               onClick={() => {
                 setMainImage("../../public/assets/planet-mars-internal.svg");
+                setDescription("Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials. Scientists initially determined that the core is at least partially liquid. Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur.")
               }}
             >
               02 INTERNAL STRUCTURE
@@ -67,6 +71,7 @@ function Mars() {
             <button
               onClick={() => {
                 setMainImage("../../public/assets/mars-geology.png");
+                setDescription("Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.")
               }}
             >
               03 SURFACE GEOLOGY

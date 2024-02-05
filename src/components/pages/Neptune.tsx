@@ -4,6 +4,9 @@ function Neptune() {
   const [mainImage, setMainImage] = useState(
     "../../public/assets/planet-neptune.svg"
   );
+  const [description, setDescription] = useState(
+    "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus."
+   );
 
   return (
     <>
@@ -12,6 +15,7 @@ function Neptune() {
           <a
             onClick={() => {
               setMainImage("../../public/assets/planet-neptune.svg");
+              setDescription("Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.")
             }}
           >
             OVERVIEW
@@ -19,6 +23,7 @@ function Neptune() {
           <a
             onClick={() => {
               setMainImage("../../public/assets/planet-uranus-neptune.svg");
+              setDescription("Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.")
             }}
           >
             INTERNAL STRUCTURE
@@ -26,6 +31,7 @@ function Neptune() {
           <a
             onClick={() => {
               setMainImage("../../public/assets/neptune-geology.png");
+              setDescription("Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.")
             }}
           >
             SURFACE GEOLOGY
@@ -37,9 +43,7 @@ function Neptune() {
         <div className="right-col animated-text">
           <h1>NEPTUNE</h1>
           <p id="description">
-          Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, 
-          it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. 
-          It is 17 times the mass of Earth, more massive than its near-twin Uranus.
+          {description}
           </p>
           <p id="source">
             Source:{"  "}
@@ -51,6 +55,7 @@ function Neptune() {
             <button
               onClick={() => {
                 setMainImage("../../public/assets/planet-neptune.svg");
+                setDescription("Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.")
               }}
             >
               01 OVERVIEW
@@ -58,6 +63,7 @@ function Neptune() {
             <button
               onClick={() => {
                 setMainImage("../../public/assets/planet-neptune-internal.svg");
+                setDescription("Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.")
               }}
             >
               02 INTERNAL STRUCTURE
@@ -65,6 +71,7 @@ function Neptune() {
             <button
               onClick={() => {
                 setMainImage("../../public/assets/neptune-geology.png");
+                setDescription("Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.")
               }}
             >
               03 SURFACE GEOLOGY

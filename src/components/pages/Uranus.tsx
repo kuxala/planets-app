@@ -4,6 +4,9 @@ function Uranus() {
   const [mainImage, setMainImage] = useState(
     "../../public/assets/planet-uranus.svg"
   );
+  const [description, setDescription] = useState(
+    "The standard model of Uranus's structure is that it consists of three layers: a rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and an outer gaseous hydrogen/helium envelope. The core is relatively small, with a mass of only 0.55 Earth masses."
+   );
 
   return (
     <>
@@ -12,6 +15,7 @@ function Uranus() {
           <a
             onClick={() => {
               setMainImage("../../public/assets/planet-uranus.svg");
+              setDescription("The standard model of Uranus's structure is that it consists of three layers: a rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and an outer gaseous hydrogen/helium envelope. The core is relatively small, with a mass of only 0.55 Earth masses.")
             }}
           >
             OVERVIEW
@@ -19,6 +23,7 @@ function Uranus() {
           <a
             onClick={() => {
               setMainImage("../../public/assets/planet-uranus-internal.svg");
+              setDescription("The composition of Uranus's atmosphere is different from its bulk, consisting mainly of molecular hydrogen and helium. The helium molar fraction, i.e. the number of helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.")
             }}
           >
             INTERNAL STRUCTURE
@@ -26,6 +31,7 @@ function Uranus() {
           <a
             onClick={() => {
               setMainImage("../../public/assets/uranus-geology.png");
+              setDescription("Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.")
             }}
           >
             SURFACE GEOLOGY
@@ -37,9 +43,7 @@ function Uranus() {
         <div className="right-col animated-text">
           <h1>URANUS</h1>
           <p id="description">
-          Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, 
-          Uranus according to Greek mythology, was the great-grandfather of Ares.
-           It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.
+          {description}
           </p>
           <p id="source">
             Source:{"  "}
@@ -51,6 +55,7 @@ function Uranus() {
             <button
               onClick={() => {
                 setMainImage("../../public/assets/planet-uranus.svg");
+                setDescription("The standard model of Uranus's structure is that it consists of three layers: a rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and an outer gaseous hydrogen/helium envelope. The core is relatively small, with a mass of only 0.55 Earth masses.")
               }}
             >
               01 OVERVIEW
@@ -58,6 +63,7 @@ function Uranus() {
             <button
               onClick={() => {
                 setMainImage("../../public/assets/planet-uranus-internal.svg");
+                setDescription("The composition of Uranus's atmosphere is different from its bulk, consisting mainly of molecular hydrogen and helium. The helium molar fraction, i.e. the number of helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.")
               }}
             >
               02 INTERNAL STRUCTURE
@@ -65,6 +71,7 @@ function Uranus() {
             <button
               onClick={() => {
                 setMainImage("../../public/assets/uranus-geology.png");
+                setDescription("Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.")
               }}
             >
               03 SURFACE GEOLOGY

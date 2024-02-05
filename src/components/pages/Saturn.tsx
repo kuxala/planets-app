@@ -4,7 +4,9 @@ function Saturn() {
   const [mainImage, setMainImage] = useState(
     "../../public/assets/planet-saturn.svg"
   );
-
+  const [description, setDescription] = useState(
+    "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth."
+   );
   return (
     <>
       <main>
@@ -12,6 +14,7 @@ function Saturn() {
           <a
             onClick={() => {
               setMainImage("../../public/assets/planet-saturn.svg");
+              setDescription("Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.")
             }}
           >
             OVERVIEW
@@ -19,13 +22,15 @@ function Saturn() {
           <a
             onClick={() => {
               setMainImage("../../public/assets/planet-saturn-internal.svg");
+              setDescription("Despite consisting mostly of hydrogen and helium, most of Saturn's mass is not in the gas phase, because hydrogen becomes a non-ideal liquid when the density is above 0.01 g/cm3, which is reached at a radius containing 99.9% of Saturn's mass.")
             }}
           >
             INTERNAL STRUCTURE
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/saturn-geology.png");
+              setMainImage("../../public/assets/saturn-geology.png");4
+              setDescription("The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles with a smaller amount of rocky debris and dust. ")
             }}
           >
             SURFACE GEOLOGY
@@ -37,9 +42,7 @@ function Saturn() {
         <div className="right-col animated-text">
           <h1>Saturn</h1>
           <p id="description">
-            Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter.
-            It is a gas giant with an average radius of
-            about nine and a half times that of Earth. It only has one-eighth the average density of Earth.
+            {description}
           </p>
           <p id="source">
             Source:{"  "}
@@ -51,6 +54,7 @@ function Saturn() {
             <button
               onClick={() => {
                 setMainImage("../../public/assets/planet-saturn.svg");
+                setDescription("Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.")
               }}
             >
               01 OVERVIEW
@@ -58,6 +62,7 @@ function Saturn() {
             <button
               onClick={() => {
                 setMainImage("../../public/assets/planet-saturn-internal.svg");
+                setDescription("Despite consisting mostly of hydrogen and helium, most of Saturn's mass is not in the gas phase, because hydrogen becomes a non-ideal liquid when the density is above 0.01 g/cm3, which is reached at a radius containing 99.9% of Saturn's mass.")
               }}
             >
               02 INTERNAL STRUCTURE
@@ -65,6 +70,7 @@ function Saturn() {
             <button
               onClick={() => {
                 setMainImage("../../public/assets/saturn-geology.png");
+                setDescription("The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles with a smaller amount of rocky debris and dust. ")
               }}
             >
               03 SURFACE GEOLOGY

@@ -191,6 +191,9 @@ section div h1 {
     display: none;
 }
 
+section div:last-child{
+    margin-bottom: 60px; 
+  }
 
 @media only screen and (max-width: 968px){
 
@@ -328,9 +331,7 @@ section div h1 {
         
     }
 
-    #padding-bot {
-        margin-bottom: 50px;
-    }
+
 
     
 }
