@@ -1,5 +1,27 @@
 import { useState } from "react";
+import styled from "styled-components";
 
+
+const StyledButton = styled.button`
+  color: #FFF;
+  font-family: Spartan;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 208.333% */
+  letter-spacing: 2.571px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 28px;
+  max-width: 350px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid rgba(246, 246, 246, 0.3);
+  
+  &:focus{
+    background-color: #2D68F0;
+  }
+`;
 function Neptune() {
   const [mainImage, setMainImage] = useState(
     "../../public/assets/planet-neptune.svg"
@@ -52,30 +74,30 @@ function Neptune() {
             </a>
           </p>
           <div className="buttons">
-            <button
+            <StyledButton
               onClick={() => {
                 setMainImage("../../public/assets/planet-neptune.svg");
                 setDescription("Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.")
               }}
             >
               01 OVERVIEW
-            </button>
-            <button
+            </StyledButton>
+            <StyledButton
               onClick={() => {
                 setMainImage("../../public/assets/planet-neptune-internal.svg");
                 setDescription("Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.")
               }}
             >
               02 INTERNAL STRUCTURE
-            </button>
-            <button
+            </StyledButton>
+            <StyledButton
               onClick={() => {
                 setMainImage("../../public/assets/neptune-geology.png");
                 setDescription("Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.")
               }}
             >
               03 SURFACE GEOLOGY
-            </button>
+            </StyledButton>
           </div>
         </div>
       </main>

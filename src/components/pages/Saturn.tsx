@@ -1,5 +1,27 @@
 import { useState } from "react";
+import styled from "styled-components";
 
+
+const StyledButton = styled.button`
+  color: #FFF;
+  font-family: Spartan;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 208.333% */
+  letter-spacing: 2.571px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 28px;
+  max-width: 350px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid rgba(246, 246, 246, 0.3);
+  
+  &:focus{
+    background-color: #CD5120;
+  }
+`;
 function Saturn() {
   const [mainImage, setMainImage] = useState(
     "../../public/assets/planet-saturn.svg"
@@ -51,30 +73,30 @@ function Saturn() {
             </a>
           </p>
           <div className="buttons">
-            <button
+            <StyledButton
               onClick={() => {
                 setMainImage("../../public/assets/planet-saturn.svg");
                 setDescription("Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.")
               }}
             >
               01 OVERVIEW
-            </button>
-            <button
+            </StyledButton>
+            <StyledButton
               onClick={() => {
                 setMainImage("../../public/assets/planet-saturn-internal.svg");
                 setDescription("Despite consisting mostly of hydrogen and helium, most of Saturn's mass is not in the gas phase, because hydrogen becomes a non-ideal liquid when the density is above 0.01 g/cm3, which is reached at a radius containing 99.9% of Saturn's mass.")
               }}
             >
               02 INTERNAL STRUCTURE
-            </button>
-            <button
+            </StyledButton>
+            <StyledButton
               onClick={() => {
                 setMainImage("../../public/assets/saturn-geology.png");
                 setDescription("The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles with a smaller amount of rocky debris and dust. ")
               }}
             >
               03 SURFACE GEOLOGY
-            </button>
+            </StyledButton>
           </div>
         </div>
       </main>

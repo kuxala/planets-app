@@ -11,11 +11,7 @@ main {
     justify-content: center;
     align-items: center;
 }
-/* .left-col img{
-    width: 200px;
-    height: 200px;
-    transition: width 2s, height 2s, transform 2s;
-} */
+
 @keyframes growAndRotate {
     from {
       width: 250px;
@@ -32,8 +28,8 @@ main {
   .animated-image {
     width: 400px;
     height: 400px;
-    transition: width 2s ease-in-out, transform 2s ease-in-out; /* You can customize the duration and timing function */
-    animation: growAndRotate 2s ease-in-out; /* You can customize the duration and timing function */
+    transition: width 2s ease-in-out, transform 2s ease-in-out;
+    animation: growAndRotate 2s ease-in-out; 
   }
 
   @keyframes fadeInFromRight {
@@ -45,7 +41,7 @@ main {
     }
   }
   .animated-text {
-    animation: fadeInFromRight 2s ease-in-out; /* You can customize the duration and timing function */
+    animation: fadeInFromRight 2s ease-in-out; 
   }
 
   @keyframes fadeInFromBottom {
@@ -61,11 +57,11 @@ main {
 
   .container {
     overflow: hidden;
-    height: 100px; /* Set the height of your container */
+    height: 100px;
   }
 
   .animated-text-bottom {
-    animation: fadeInFromBottom 2s ease-in-out; /* You can customize the duration and timing function */
+    animation: fadeInFromBottom 2s ease-in-out; 
   }
 
 .right-col{
@@ -120,24 +116,19 @@ main {
     flex-direction: column;
     gap: 16px;
 }
-button{
+/* button{
     color: #FFF;
     font-family: Spartan;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    line-height: 25px; /* 208.333% */
+    line-height: 25px; 
     letter-spacing: 2.571px;
     text-transform: uppercase;
     text-align: left;
     padding-left: 28px;
 }
-.buttons #first-button {
-    max-width: 350px;
-    height: 48px;
-    border: none;
-    border: 1px solid rgba(246, 246, 246, 0.3);
-}
+
 .buttons button{
     max-width: 350px;
     height: 48px;
@@ -149,9 +140,7 @@ button{
 }
 .buttons button:focus{
     background: #419EBB;
-    /* color: #000; */
-
-}
+} */
 
 section {
     display: flex;
@@ -213,8 +202,8 @@ section div:last-child{
       .animated-image {
         width: 250px !important;
         height: 250px !important;
-        transition: width 2s ease-in-out, transform 2s ease-in-out; /* You can customize the duration and timing function */
-        animation: growAndRotate 2s ease-in-out; /* You can customize the duration and timing function */
+        transition: width 2s ease-in-out, transform 2s ease-in-out; 
+        animation: growAndRotate 2s ease-in-out; 
       }
 
       

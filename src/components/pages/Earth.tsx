@@ -1,5 +1,27 @@
 import { useState } from "react";
-// import "../mainPage/Page.css"
+import styled from "styled-components"
+
+const StyledButton = styled.button`
+  color: #FFF;
+  font-family: Spartan;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 208.333% */
+  letter-spacing: 2.571px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 28px;
+  max-width: 350px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid rgba(246, 246, 246, 0.3);
+  
+  &:focus{
+    background-color: #6D2ED5;
+  }
+`;
+
 function MainPage() {
   const [mainImage, setMainImage] = useState(
     "../../public/assets/planet-earth.svg"
@@ -52,30 +74,29 @@ function MainPage() {
             </a>
           </p>
           <div className="buttons">
-            <button
-              onClick={() => {
+            <StyledButton              onClick={() => {
                 setMainImage("../../public/assets/planet-earth.svg");
                 setDescription("Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle.")
               }}
             >
               01 OVERVIEW
-            </button>
-            <button
+            </StyledButton>
+            <StyledButton
               onClick={() => {
                 setMainImage("../../public/assets/planet-earth-internal.svg");
                 setDescription("The total surface area of Earth is about 510 million km2. The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors.")
               }}
             >
               02 INTERNAL STRUCTURE
-            </button>
-            <button
+            </StyledButton>
+            <StyledButton
               onClick={() => {
                 setMainImage("../../public/assets/earth-geology.png");
                 setDescription("Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.")
               }}
             >
               03 SURFACE GEOLOGY
-            </button>
+            </StyledButton>
           </div>
         </div>
       </main>
