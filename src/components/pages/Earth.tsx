@@ -25,14 +25,14 @@ function MainPage() {
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/geology-earth.png");
+              setMainImage("../../public/assets/earth-geology.png");
             }}
           >
             SURFACE GEOLOGY
           </a>
         </div>
         <div className="left-col">
-          <img src={mainImage} className="image" />
+          <img src={mainImage} className="image"width="450px" height="450px" />
         </div>
         <div className="right-col">
           <h1>EARTH</h1>
@@ -64,7 +64,7 @@ function MainPage() {
             </button>
             <button
               onClick={() => {
-                setMainImage("../../public/assets/geology-earth.png");
+                setMainImage("../../public/assets/earth-geology.png");
               }}
             >
               03 SURFACE GEOLOGY

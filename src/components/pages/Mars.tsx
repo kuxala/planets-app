@@ -1,8 +1,8 @@
 import { useState } from "react";
-// import "../mainPage/Page.css"
-function MainPage() {
+
+function Mars() {
   const [mainImage, setMainImage] = useState(
-    "../../public/assets/planet-venus.svg"
+    "../../public/assets/planet-mars.svg"
   );
 
   return (
@@ -11,60 +11,62 @@ function MainPage() {
         <div className="mobile-buttons">
           <a
             onClick={() => {
-              setMainImage("../../public/assets/planet-venus.svg");
+              setMainImage("../../public/assets/planet-mars.svg");
             }}
           >
             OVERVIEW
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/planet-venus-internal.svg");
+              setMainImage("../../public/assets/planet-mars-internal.svg");
             }}
           >
             INTERNAL STRUCTURE
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/venus-geology.png");
+              setMainImage("../../public/assets/mars-geology.png");
             }}
           >
             SURFACE GEOLOGY
           </a>
         </div>
         <div className="left-col">
-          <img src={mainImage} className="image" width="400px" height="400px"/>
+          <img src={mainImage} className="image" width="336px" height="336px" />
         </div>
         <div className="right-col">
-          <h1>VENUS</h1>
+          <h1>MARS</h1>
           <p id="description">
-          Venus is the second planet from the Sun.
-          It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, 
-          on rare occasions, visible to the naked eye in broad daylight.
+            Mercury is the smallest planet in the Solar System and the closest
+            to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
+            shortest of all the Sun's planets. Mercury is one of four
+            terrestrial planets in the Solar System, and is a rocky body like
+            Earth.
           </p>
           <p id="source">
             Source:{"  "}
-            <a href="https://en.wikipedia.org/wiki/Venus_(planet)">
+            <a href="https://en.wikipedia.org/wiki/Mars_(planet)">
               Wikipedia
             </a>
           </p>
           <div className="buttons">
             <button
               onClick={() => {
-                setMainImage("../../public/assets/planet-venus.svg");
+                setMainImage("../../public/assets/planet-mars.svg");
               }}
             >
               01 OVERVIEW
             </button>
             <button
               onClick={() => {
-                setMainImage("../../public/assets/planet-mercury-internal.svg");
+                setMainImage("../../public/assets/planet-mars-internal.svg");
               }}
             >
               02 INTERNAL STRUCTURE
             </button>
             <button
               onClick={() => {
-                setMainImage("../../public/assets/venus-geology.png");
+                setMainImage("../../public/assets/mars-geology.png");
               }}
             >
               03 SURFACE GEOLOGY
@@ -75,23 +77,23 @@ function MainPage() {
       <section>
         <div>
           <p>ROTATION TIME</p>
-          <h1>243 days</h1>
+          <h1>1.03 days	</h1>
         </div>
         <div>
           <p>REVOLUTION TIME</p>
-          <h1>224.7 days</h1>
+          <h1>1.88 years</h1>
         </div>
         <div>
           <p>RADIUS</p>
-          <h1>6,051.8 km</h1>
+          <h1>3,389.5 km</h1>
         </div>
-        <div>
+        <div  id="padding-bot">
           <p>AVERAGE TEMO</p>
-          <h1>471°c</h1>
+          <h1>−28°c</h1>
         </div>
       </section>
     </>
   );
 }
 
-export default MainPage;
+export default Mars;

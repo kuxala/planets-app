@@ -5,17 +5,17 @@ main {
     width: 100%;
 }
 .left-col{
-    width: 55%;
+    width:60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.left-col img{
+/* .left-col img{
     width: 390px;
     height: 390px;
-}
+} */
 .right-col{
-    width: 45%;
+    width: 40%;
 }
 
 .right-col h1 {
@@ -150,8 +150,8 @@ section div h1 {
         width: 100% !important;
     }
     .left-col .image{
-        width: 150px;
-        height: 150px;
+        width: 350px;
+        height: 350px;
     }
     .right-col{
         width: 100% !important;

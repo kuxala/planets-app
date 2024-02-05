@@ -1,8 +1,6 @@
 // import React from 'react'
 import { Link, Route, Routes } from "react-router-dom";
 import "./Header.css";
-import Venus from "../pages/Venus";
-import Mercury from "../mainPage/Page";
 
 function Header() {
   return (
@@ -14,9 +12,7 @@ function Header() {
           width="30px"
           height="30px"
           className="menu"
-          onClick={() => {
-            
-          }}
+          onClick={() => {}}
         />
         <ul>
           <Link to="mercury">
@@ -28,11 +24,21 @@ function Header() {
           <Link to="earth">
             <li>EARTH</li>
           </Link>
-          <li>MARS</li>
-          <li>JUPITER</li>
-          <li>SATURN</li>
-          <li>URANUS</li>
-          <li>NEPTUNE</li>
+          <Link to="mars">
+            <li>MARS</li>
+          </Link>
+          <Link to="jupiter">
+            <li>JUPITER</li>
+          </Link>
+          <Link to="saturn">
+            <li>SATURN</li>
+          </Link>
+          <Link to="uranus">
+            <li>URANUS</li>
+          </Link>
+          <Link to="neptune">
+            <li>NEPTUNE</li>
+          </Link>
         </ul>
       </nav>
     </>

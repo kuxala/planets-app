@@ -30,6 +30,10 @@ nav ul li{
     line-height: 25px; /* 227.273% */
     letter-spacing: 1px;
     text-transform: uppercase;
+    height: 100%;
+}
+nav ul li a{
+    text-decoration: none;
 }
 .menu{
     visibility: hidden;

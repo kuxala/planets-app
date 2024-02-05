@@ -1,8 +1,8 @@
 import { useState } from "react";
-// import "../mainPage/Page.css"
-function MainPage() {
+
+function Saturn() {
   const [mainImage, setMainImage] = useState(
-    "../../public/assets/planet-venus.svg"
+    "../../public/assets/planet-saturn.svg"
   );
 
   return (
@@ -11,60 +11,60 @@ function MainPage() {
         <div className="mobile-buttons">
           <a
             onClick={() => {
-              setMainImage("../../public/assets/planet-venus.svg");
+              setMainImage("../../public/assets/planet-saturn.svg");
             }}
           >
             OVERVIEW
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/planet-venus-internal.svg");
+              setMainImage("../../public/assets/planet-saturn-internal.svg");
             }}
           >
             INTERNAL STRUCTURE
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/venus-geology.png");
+              setMainImage("../../public/assets/saturn-geology.png");
             }}
           >
             SURFACE GEOLOGY
           </a>
         </div>
         <div className="left-col">
-          <img src={mainImage} className="image" width="400px" height="400px"/>
+          <img src={mainImage} className="image" width="500px" height="500px" />
         </div>
         <div className="right-col">
-          <h1>VENUS</h1>
+          <h1>Saturn</h1>
           <p id="description">
-          Venus is the second planet from the Sun.
-          It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, 
-          on rare occasions, visible to the naked eye in broad daylight.
+            Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter.
+            It is a gas giant with an average radius of
+            about nine and a half times that of Earth. It only has one-eighth the average density of Earth.
           </p>
           <p id="source">
             Source:{"  "}
-            <a href="https://en.wikipedia.org/wiki/Venus_(planet)">
+            <a href="https://en.wikipedia.org/wiki/Saturn_(planet)">
               Wikipedia
             </a>
           </p>
           <div className="buttons">
             <button
               onClick={() => {
-                setMainImage("../../public/assets/planet-venus.svg");
+                setMainImage("../../public/assets/planet-saturn.svg");
               }}
             >
               01 OVERVIEW
             </button>
             <button
               onClick={() => {
-                setMainImage("../../public/assets/planet-mercury-internal.svg");
+                setMainImage("../../public/assets/planet-saturn-internal.svg");
               }}
             >
               02 INTERNAL STRUCTURE
             </button>
             <button
               onClick={() => {
-                setMainImage("../../public/assets/venus-geology.png");
+                setMainImage("../../public/assets/saturn-geology.png");
               }}
             >
               03 SURFACE GEOLOGY
@@ -75,23 +75,23 @@ function MainPage() {
       <section>
         <div>
           <p>ROTATION TIME</p>
-          <h1>243 days</h1>
+          <h1>10.8 hours</h1>
         </div>
         <div>
           <p>REVOLUTION TIME</p>
-          <h1>224.7 days</h1>
+          <h1>29.46 years</h1>
         </div>
         <div>
           <p>RADIUS</p>
-          <h1>6,051.8 km</h1>
+          <h1>58,232 km</h1>
         </div>
-        <div>
+        <div  id="padding-bot">
           <p>AVERAGE TEMO</p>
-          <h1>471°c</h1>
+          <h1>-138°c</h1>
         </div>
       </section>
     </>
   );
 }
 
-export default MainPage;
+export default Saturn;

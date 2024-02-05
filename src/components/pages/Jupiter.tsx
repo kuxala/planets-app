@@ -1,8 +1,8 @@
 import { useState } from "react";
-// import "../mainPage/Page.css"
-function MainPage() {
+
+function Jupiter() {
   const [mainImage, setMainImage] = useState(
-    "../../public/assets/planet-venus.svg"
+    "../../public/assets/planet-jupiter.svg"
   );
 
   return (
@@ -11,60 +11,60 @@ function MainPage() {
         <div className="mobile-buttons">
           <a
             onClick={() => {
-              setMainImage("../../public/assets/planet-venus.svg");
+              setMainImage("../../public/assets/planet-jupiter.svg");
             }}
           >
             OVERVIEW
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/planet-venus-internal.svg");
+              setMainImage("../../public/assets/planet-jupiter-internal.svg");
             }}
           >
             INTERNAL STRUCTURE
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/venus-geology.png");
+              setMainImage("../../public/assets/jupiter-geology.png");
             }}
           >
             SURFACE GEOLOGY
           </a>
         </div>
         <div className="left-col">
-          <img src={mainImage} className="image" width="400px" height="400px"/>
+          <img src={mainImage} className="image" width="550px" height="550px" />
         </div>
         <div className="right-col">
-          <h1>VENUS</h1>
+          <h1>JUPITER</h1>
           <p id="description">
-          Venus is the second planet from the Sun.
-          It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, 
-          on rare occasions, visible to the naked eye in broad daylight.
+          Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a
+           gas giant with a mass two and a half times that of all the other
+           planets in the Solar System combined, but less than one-thousandth the mass of the Sun.
           </p>
           <p id="source">
             Source:{"  "}
-            <a href="https://en.wikipedia.org/wiki/Venus_(planet)">
+            <a href="https://en.wikipedia.org/wiki/Jupiter_(planet)">
               Wikipedia
             </a>
           </p>
           <div className="buttons">
             <button
               onClick={() => {
-                setMainImage("../../public/assets/planet-venus.svg");
+                setMainImage("../../public/assets/planet-jupiter.svg");
               }}
             >
               01 OVERVIEW
             </button>
             <button
               onClick={() => {
-                setMainImage("../../public/assets/planet-mercury-internal.svg");
+                setMainImage("../../public/assets/planet-jupiter-internal.svg");
               }}
             >
               02 INTERNAL STRUCTURE
             </button>
             <button
               onClick={() => {
-                setMainImage("../../public/assets/venus-geology.png");
+                setMainImage("../../public/assets/jupiter-geology.png");
               }}
             >
               03 SURFACE GEOLOGY
@@ -75,23 +75,23 @@ function MainPage() {
       <section>
         <div>
           <p>ROTATION TIME</p>
-          <h1>243 days</h1>
+          <h1>9.93 hours</h1>
         </div>
         <div>
           <p>REVOLUTION TIME</p>
-          <h1>224.7 days</h1>
+          <h1>11.86 years</h1>
         </div>
         <div>
           <p>RADIUS</p>
-          <h1>6,051.8 km</h1>
+          <h1>69,911 km</h1>
         </div>
-        <div>
+        <div  id="padding-bot">
           <p>AVERAGE TEMO</p>
-          <h1>471°c</h1>
+          <h1>-108°c</h1>
         </div>
       </section>
     </>
   );
 }
 
-export default MainPage;
+export default Jupiter;
