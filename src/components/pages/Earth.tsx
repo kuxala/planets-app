@@ -24,7 +24,7 @@ const StyledButton = styled.button`
 
 function MainPage() {
   const [mainImage, setMainImage] = useState(
-    "../../assets/planet-earth.svg"
+    "../../public/assets/planet-earth.svg"
   );
   const [description, setDescription] = useState(
    "Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle."
