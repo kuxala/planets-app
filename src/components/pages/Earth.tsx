@@ -24,7 +24,7 @@ const StyledButton = styled.button`
 
 function MainPage() {
   const [mainImage, setMainImage] = useState(
-    "../../public/assets/planet-earth.svg"
+    "../../assets/planet-earth.svg"
   );
   const [description, setDescription] = useState(
    "Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle."
@@ -36,7 +36,7 @@ function MainPage() {
         <div className="mobile-buttons">
           <a
             onClick={() => {
-              setMainImage("../../public/assets/planet-earth.svg");
+              setMainImage("../../assets/planet-earth.svg");
               setDescription("Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle.")
             }}
           >
@@ -44,7 +44,7 @@ function MainPage() {
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/planet-earth-internal.svg");
+              setMainImage("../../assets/planet-earth-internal.svg");
               setDescription("The total surface area of Earth is about 510 million km2. The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors.")
             }}
           >
@@ -52,7 +52,7 @@ function MainPage() {
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/earth-geology.png");
+              setMainImage("../../assets/earth-geology.png");
               setDescription("Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.")
             }}
           >
@@ -75,7 +75,7 @@ function MainPage() {
           </p>
           <div className="buttons">
             <StyledButton              onClick={() => {
-                setMainImage("../../public/assets/planet-earth.svg");
+                setMainImage("../../assets/planet-earth.svg");
                 setDescription("Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle.")
               }}
             >
@@ -83,7 +83,7 @@ function MainPage() {
             </StyledButton>
             <StyledButton
               onClick={() => {
-                setMainImage("../../public/assets/planet-earth-internal.svg");
+                setMainImage("../../assets/planet-earth-internal.svg");
                 setDescription("The total surface area of Earth is about 510 million km2. The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors.")
               }}
             >
@@ -91,7 +91,7 @@ function MainPage() {
             </StyledButton>
             <StyledButton
               onClick={() => {
-                setMainImage("../../public/assets/earth-geology.png");
+                setMainImage("../../assets/earth-geology.png");
                 setDescription("Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.")
               }}
             >
