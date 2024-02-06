@@ -1,9 +1,10 @@
 // import React from 'react'
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Header.css";
 import styled from "styled-components";
-
+import Page from "../mainPage/Page";
+import Dropdown from "./Dropdown";
 const StyledMercury = styled.li`
   padding-top: 32px;
   color: #fff;
@@ -77,7 +78,7 @@ const Styledjupiter = styled.li`
   text-transform: uppercase;
   height: 8vh;
   &:hover {
-    border-top: 5px solid #D83A34;
+    border-top: 5px solid #d83a34;
   }
 `;
 const StyledSaturn = styled.li`
@@ -92,7 +93,7 @@ const StyledSaturn = styled.li`
   text-transform: uppercase;
   height: 8vh;
   &:hover {
-    border-top: 5px solid #CD5120;
+    border-top: 5px solid #cd5120;
   }
 `;
 const StyledUranus = styled.li`
@@ -107,7 +108,7 @@ const StyledUranus = styled.li`
   text-transform: uppercase;
   height: 8vh;
   &:hover {
-    border-top: 5px solid #1EC1A2;
+    border-top: 5px solid #1ec1a2;
   }
 `;
 const StyledNeptune = styled.li`
@@ -122,15 +123,26 @@ const StyledNeptune = styled.li`
   text-transform: uppercase;
   height: 8vh;
   &:hover {
-    border-top: 5px solid #2D68F0;
+    border-top: 5px solid #2d68f0;
   }
 `;
 
 function Header() {
-  const [show, setShow] = useState<any>(false);
-  console.log(show)
+  const [show, setShow] = useState<boolean>(false);
+  
+  useEffect(() => {
+    let body = document.querySelector("body");
+    if (body !== null) {
+      show
+        ? (body.style.overflowY = "hidden")
+        : (body.style.overflowY = "auto");
+    }
+  }, [show]);
   return (
     <>
+    <div className="none"><Dropdown show={show} setShow={setShow}/></div>
+      
+      {show && <Dropdown show={show} setShow={setShow} />}
       <nav>
         <h1>THE PLANETS</h1>
         <img
@@ -143,9 +155,9 @@ function Header() {
           }}
         />
 
-        <ul>
+        <ul >
           <Link to="mercury">
-            <StyledMercury>MERCURY</StyledMercury>
+            <StyledMercury >MERCURY</StyledMercury>
           </Link>
           <Link to="venus">
             <StyledVenus>VENUS</StyledVenus>

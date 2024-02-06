@@ -41,7 +41,9 @@ nav ul li:hover{
     visibility: hidden;
 }
 
-
+.none{
+    display: none;
+}
 
 @media only screen and (max-width: 968px) {
     nav {
@@ -60,7 +62,10 @@ nav ul li:hover{
         position: absolute;
         height: 100%;
         width: 100%;
-        top: 10%;
+        top: 9%;
+        z-index: 9;
+        background-color: #070724;
+        
     }
 
     .dropdown .round{
