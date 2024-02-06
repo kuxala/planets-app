@@ -24,7 +24,7 @@ const StyledButton = styled.button`
 `;
 function Neptune() {
   const [mainImage, setMainImage] = useState(
-    "../../public/assets/planet-neptune.svg"
+    "../../assets/planet-neptune.svg"
   );
   const [description, setDescription] = useState(
     "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus."
@@ -36,7 +36,7 @@ function Neptune() {
         <div className="mobile-buttons">
           <a
             onClick={() => {
-              setMainImage("../../public/assets/planet-neptune.svg");
+              setMainImage("../../assets/planet-neptune.svg");
               setDescription("Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.")
             }}
           >
@@ -44,7 +44,7 @@ function Neptune() {
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/planet-uranus-neptune.svg");
+              setMainImage("../../assets/planet-uranus-neptune.svg");
               setDescription("Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.")
             }}
           >
@@ -52,7 +52,7 @@ function Neptune() {
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/neptune-geology.png");
+              setMainImage("../../assets/neptune-geology.png");
               setDescription("Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.")
             }}
           >
@@ -76,7 +76,7 @@ function Neptune() {
           <div className="buttons">
             <StyledButton
               onClick={() => {
-                setMainImage("../../public/assets/planet-neptune.svg");
+                setMainImage("../../assets/planet-neptune.svg");
                 setDescription("Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.")
               }}
             >
@@ -84,7 +84,7 @@ function Neptune() {
             </StyledButton>
             <StyledButton
               onClick={() => {
-                setMainImage("../../public/assets/planet-neptune-internal.svg");
+                setMainImage("../../assets/planet-neptune-internal.svg");
                 setDescription("Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.")
               }}
             >
@@ -92,7 +92,7 @@ function Neptune() {
             </StyledButton>
             <StyledButton
               onClick={() => {
-                setMainImage("../../public/assets/neptune-geology.png");
+                setMainImage("../../assets/neptune-geology.png");
                 setDescription("Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.")
               }}
             >

@@ -24,7 +24,7 @@ const StyledButton = styled.button`
 `;
 function Mars() {
   const [mainImage, setMainImage] = useState(
-    "../../public/assets/planet-mars.svg"
+    "../../assets/planet-mars.svg"
   );
   const [description, setDescription] = useState(
     "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the Red Planet."
@@ -36,7 +36,7 @@ function Mars() {
         <div className="mobile-buttons">
           <a
             onClick={() => {
-              setMainImage("../../public/assets/planet-mars.svg");
+              setMainImage("../../assets/planet-mars.svg");
               setDescription("Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the Red Planet.")
             }}
           >
@@ -44,7 +44,7 @@ function Mars() {
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/planet-mars-internal.svg");
+              setMainImage("../../assets/planet-mars-internal.svg");
               setDescription("Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials. Scientists initially determined that the core is at least partially liquid. Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur.")
             }}
           >
@@ -52,7 +52,7 @@ function Mars() {
           </a>
           <a
             onClick={() => {
-              setMainImage("../../public/assets/mars-geology.png");
+              setMainImage("../../assets/mars-geology.png");
               setDescription("Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.")
             }}
           >
@@ -76,7 +76,7 @@ function Mars() {
           <div className="buttons">
             <StyledButton
               onClick={() => {
-                setMainImage("../../public/assets/planet-mars.svg");
+                setMainImage("../../assets/planet-mars.svg");
                 setDescription("Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the Red Planet.")
               }}
             >
@@ -84,7 +84,7 @@ function Mars() {
             </StyledButton>
             <StyledButton
               onClick={() => {
-                setMainImage("../../public/assets/planet-mars-internal.svg");
+                setMainImage("../../assets/planet-mars-internal.svg");
                 setDescription("Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials. Scientists initially determined that the core is at least partially liquid. Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur.")
               }}
             >
@@ -92,7 +92,7 @@ function Mars() {
             </StyledButton>
             <StyledButton
               onClick={() => {
-                setMainImage("../../public/assets/mars-geology.png");
+                setMainImage("../../assets/mars-geology.png");
                 setDescription("Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.")
               }}
             >
