@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Header.css";
 import styled from "styled-components";
-import Page from "../mainPage/Page";
 import Dropdown from "./Dropdown";
+
 const StyledMercury = styled.li`
   padding-top: 32px;
   color: #fff;
@@ -140,9 +140,9 @@ function Header() {
   }, [show]);
   return (
     <>
-    <div className="none"><Dropdown show={show} setShow={setShow}/></div>
+    <div className="none"><Dropdown setShow={setShow}/></div>
       
-      {show && <Dropdown show={show} setShow={setShow} />}
+      {show && <Dropdown  setShow={setShow} />}
       <nav>
         <h1>THE PLANETS</h1>
         <img

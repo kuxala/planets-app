@@ -1,10 +1,9 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
 type DropdownProps = {
-  show: boolean;
   setShow: any;
 };
-function Dropdown({ show, setShow }: DropdownProps) {
+function Dropdown({ setShow }: DropdownProps) {
   
   return (
     <>

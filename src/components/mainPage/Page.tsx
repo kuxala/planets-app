@@ -1,6 +1,5 @@
 import "./Page.css";
 import { useState } from "react";
-import Dropdown from "../header/Dropdown";
 import styled from "styled-components";
 
 
