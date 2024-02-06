@@ -1,31 +1,7 @@
-import "./Page.css";
 import { useState } from "react";
-import Dropdown from "../header/Dropdown";
-import styled from "styled-components";
+import { StyledButton } from "./Mercury";
 
-
-const StyledButton = styled.button`
-  color: #FFF;
-  font-family: Spartan;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 25px; /* 208.333% */
-  letter-spacing: 2.571px;
-  text-transform: uppercase;
-  text-align: left;
-  padding-left: 28px;
-  max-width: 350px;
-  height: 48px;
-  background-color: transparent;
-  border: 1px solid rgba(246, 246, 246, 0.3);
-  
-  &:focus{
-    background-color: #419EBB;
-  }
-`;
-
-function MainPage({show, setShow}: {show: any, setShow: any}) {
+export function MainPage() {
   const [mainImage, setMainImage] = useState(
     "../../public/assets/planet-mercury.svg"
   );
@@ -33,7 +9,7 @@ function MainPage({show, setShow}: {show: any, setShow: any}) {
     " Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth."
   );
 
-    console.log
+  // console.log("in Page: ", show)
   const main = (
     <>
       <main>
@@ -74,8 +50,7 @@ function MainPage({show, setShow}: {show: any, setShow: any}) {
             src={mainImage}
             className="image animated-image"
             width="250px"
-            height="250px"
-          />
+            height="250px" />
         </div>
         <div className="right-col animated-text">
           <h1>MERCURY</h1>
@@ -143,8 +118,6 @@ function MainPage({show, setShow}: {show: any, setShow: any}) {
       </section>
     </>
   );
-  return main;
+  // return main;
   // return <Dropdown />;
 }
-
-export default MainPage;
