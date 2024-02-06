@@ -1,9 +1,7 @@
 // import React from 'react'
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {useState} from "react";
 import "./Header.css";
-import Dropdown from "./Dropdown";
-import MainPage from "../mainPage/Page";
 
 function Header() {
   const [show, setShow] = useState<any>(false);
