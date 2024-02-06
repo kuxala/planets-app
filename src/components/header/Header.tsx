@@ -146,7 +146,7 @@ function Header() {
       <nav>
         <h1>THE PLANETS</h1>
         <img
-          src="../../public/assets/icon-hamburger.svg"
+          src="../../assets/icon-hamburger.svg"
           width="30px"
           height="30px"
           className="menu"
