@@ -116,31 +116,6 @@ main {
     flex-direction: column;
     gap: 16px;
 }
-/* button{
-    color: #FFF;
-    font-family: Spartan;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 25px; 
-    letter-spacing: 2.571px;
-    text-transform: uppercase;
-    text-align: left;
-    padding-left: 28px;
-}
-
-.buttons button{
-    max-width: 350px;
-    height: 48px;
-    background-color: transparent;
-    border: 1px solid rgba(246, 246, 246, 0.3);
-}
-.buttons button:hover{
-    background: #9f9e9e;
-}
-.buttons button:focus{
-    background: #419EBB;
-} */
 
 section {
     display: flex;

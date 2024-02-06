@@ -3,18 +3,15 @@ import { Link, Route, Routes } from "react-router-dom";
 import {useState} from "react";
 import "./Header.css";
 import Dropdown from "./Dropdown";
-import Page from "../mainPage/Page"
-
-
-
+import MainPage from "../mainPage/Page";
 
 function Header() {
-  const [show, setShow] = useState<boolean>(false);
-
-  console.log("in Header: ", show)
+  const [show, setShow] = useState<any>(false);
+ 
+  
  return (
     <>
-     
+    
       <nav>
         <h1>THE PLANETS</h1>
         <img
